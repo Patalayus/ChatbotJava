@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class numbers{
     static void method1(){
+        //class object
+        chatbot jump = new chatbot();
+
         System.out.println("What would you like to do?\n1. Add\n2. Subract\n3. Multiply\n4. Divide\n");
         Scanner sc = new Scanner(System.in);
         int mathChoice = sc.nextInt();
@@ -13,6 +16,7 @@ public class numbers{
             double secondNumA = sc.nextDouble();
             double totalAdd = firstNumA + secondNumA;
             System.out.println("Your total is "+totalAdd);
+            jump.repeat();
         }
         //subtract below
         else if(mathChoice == 2){
@@ -22,6 +26,7 @@ public class numbers{
             double secondNumS = sc.nextDouble();
             double totalSub = firstNumS - secondNumS;
             System.out.println("Your total is "+totalSub);
+            jump.repeat();
         }
         //multiply below
         else if(mathChoice == 3){
@@ -31,6 +36,7 @@ public class numbers{
             double secondNumM = sc.nextDouble();
             double totalMul = firstNumM * secondNumM;
             System.out.println("Your total is "+totalMul);
+            jump.repeat();
         }
         //divide below
         else if(mathChoice == 4){
@@ -40,6 +46,7 @@ public class numbers{
             double secondNumD = sc.nextDouble();
             double totalDiv = firstNumD / secondNumD;
             System.out.println("Your total is "+totalDiv);
+            jump.repeat();
         }
 
         else{
