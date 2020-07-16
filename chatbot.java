@@ -26,16 +26,17 @@ public class chatbot{
 
         //class object declaration
         numbers numObj = new numbers();
+        letters letObj = new letters();
 
         if(userChoice0 == 1){
             System.out.println("Maths it is!");
             numObj.method1();
         }else if(userChoice0 == 2){
             System.out.println("English it is!");
+            letObj.method2();
         }else if(userChoice0 == 3){
             System.out.println("Science it is!");
         }
-
     }
 
     void repeat(){
@@ -49,6 +50,5 @@ public class chatbot{
         }else if(choiceNum == 2){
             warp2.mainQ();
         }
-
     }
 }

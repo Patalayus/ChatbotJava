@@ -48,7 +48,6 @@ public class numbers{
             System.out.println("Your total is "+totalDiv);
             jump.repeat();
         }
-
         else{
             System.out.println("Please enter a valid input");
         }
