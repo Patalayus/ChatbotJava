@@ -26,22 +26,66 @@ public class letters {
     }
 
     void vowels(){
-        System.out.println("\nStarting the game...\n");
-
+        letters spr = new letters();
+        Scanner reg = new Scanner(System.in);
+        System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
+        int gameChoice = reg.nextInt();
+        if(gameChoice == 1){
+            spr.vowelGame();
+        }else {
+            System.out.println("ending program");
+        }
     }
 
     void consenants(){
-        System.out.println("\nStarting the game...\n");
-
+        letters spr = new letters();
+        Scanner reg = new Scanner(System.in);
+        System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
+        int gameChoice = reg.nextInt();
+        if(gameChoice == 1){
+            spr.conGame();
+        }else {
+            System.out.println("ending program");
+        }
     }
 
     void nouns(){
-        System.out.println("\nStarting the game...\n");
-
+        letters spr = new letters();
+        Scanner reg = new Scanner(System.in);
+        System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
+        int gameChoice = reg.nextInt();
+        if(gameChoice == 1){
+            spr.nounGame();
+        }else {
+            System.out.println("ending program");
+        }
     }
 
     void adjectives(){
-        System.out.println("\nStarting the game...\n");
+        letters spr = new letters();
+        Scanner reg = new Scanner(System.in);
+        System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
+        int gameChoice = reg.nextInt();
+        if(gameChoice == 1){
+            spr.adjGame();
+        }else {
+            System.out.println("ending program");
+        }
+    }
+
+    void vowelGame(){
+
+    }
+
+    void conGame(){
+
+    }
+
+    void nounGame(){
+
+    }
+
+    void adjGame(){
 
     }
 }
