@@ -87,6 +87,15 @@ public class letters {
     }
 
     void conGame(){
+        Scanner numIn = new Scanner(System.in);
+        System.out.println("For this game you have to select the consenant from a list of letters");
+        System.out.println("\n1. A\n2. T\n3. I\n4.U\n");
+        int letterChoice = numIn.nextInt();
+        if(letterChoice == 1 || letterChoice == 3 || letterChoice == 4){
+            System.out.println("Unlucky, the consenant is the 2nd letter, 'T'");
+        }else if(letterChoice == 2){
+            System.out.println("Congratulations, you have selected the correct letter");
+        }
 
     }
 
