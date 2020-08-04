@@ -28,6 +28,7 @@ public class chatbot{
         numbers numObj = new numbers();
         letters letObj = new letters();
 
+        //user selects the task they want to do
         if(userChoice0 == 1){
             System.out.println("Maths it is!");
             numObj.method1();

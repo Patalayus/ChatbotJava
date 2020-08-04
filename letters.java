@@ -74,6 +74,15 @@ public class letters {
     }
 
     void vowelGame(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("For this game you have to select the vowel\nout of the following words");
+        System.out.println("\n1. D\n2. B\n3. I\n4. W");
+        int letterChoice = in.nextInt();
+        if(letterChoice == 1 || letterChoice == 2 || letterChoice == 4){
+            System.out.println("Unlucky, the vowel was actually letter 3, which was 'I'");
+        }else if(letterChoice == 3){
+            System.out.println("Congratulations, you have selected the correct letter");
+        }
 
     }
 
