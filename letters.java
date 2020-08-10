@@ -100,7 +100,15 @@ public class letters {
     }
 
     void nounGame(){
-
+        Scanner numIn = new Scanner(System.in);
+        System.out.println("For this game you have to finish the description of a 'noun'.\nA noun is a...\n");
+        System.out.println("\n1. Doing Word\n2. Descriptive Word\n3. Describes a Doing Word\n4. An Object, eg: 'Dog'\n");
+        int letterChoice = numIn.nextInt();
+        if(letterChoice == 1 || letterChoice == 2 || letterChoice == 3){
+            System.out.println("Unlucky, a noun is an object");
+        }else if(letterChoice == 4){
+            System.out.println("Congratulations, a noun is an object. This can be something as simple as a chair\nor even a table!");
+        }
     }
 
     void adjGame(){

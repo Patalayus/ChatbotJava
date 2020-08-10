@@ -40,7 +40,6 @@ public class chatbot{
         }
     }
 
-
     void repeat(){
         Scanner cc = new Scanner(System.in);
         numbers warp = new numbers();
