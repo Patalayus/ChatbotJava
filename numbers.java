@@ -50,6 +50,7 @@ public class numbers{
         }
         else{
             System.out.println("Please enter a valid input");
+            //this is validation
         }
     }
 }

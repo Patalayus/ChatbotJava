@@ -14,18 +14,19 @@ public class letters {
             System.out.println("You have chosen Vowels...");
             QzF.vowels();
         }else if(choice == 2){
-            System.out.println("You have chosen Consenants");
+            System.out.println("You have chosen Consenants...");
             QzF.consenants();
         }else if(choice == 3){
-            System.out.println("You have chosen Nouns");
+            System.out.println("You have chosen Nouns...");
             QzF.nouns();
         }else if(choice == 4){
-            System.out.println("You have chosen Adjectives");
+            System.out.println("You have chosen Adjectives...");
             QzF.adjectives();
         }
     }
 
     void vowels(){
+        //this is where the user can start the vowel game
         letters spr = new letters();
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
@@ -38,6 +39,7 @@ public class letters {
     }
 
     void consenants(){
+        //this is where the user can start the con game
         letters spr = new letters();
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
@@ -50,6 +52,7 @@ public class letters {
     }
 
     void nouns(){
+        //this is where the user can start the noun game
         letters spr = new letters();
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
@@ -62,6 +65,7 @@ public class letters {
     }
 
     void adjectives(){
+        //this is where the user can start the adjective game
         letters spr = new letters();
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
@@ -74,6 +78,7 @@ public class letters {
     }
 
     void vowelGame(){
+        //this is the vowel game
         Scanner in = new Scanner(System.in);
         System.out.println("For this game you have to select the vowel\nout of the following words");
         System.out.println("\n1. D\n2. B\n3. I\n4. W");
@@ -87,6 +92,7 @@ public class letters {
     }
 
     void conGame(){
+        //this is the con game
         Scanner numIn = new Scanner(System.in);
         System.out.println("For this game you have to select the consenant from a list of letters");
         System.out.println("\n1. A\n2. T\n3. I\n4.U\n");
@@ -100,6 +106,7 @@ public class letters {
     }
 
     void nounGame(){
+        //this is the noun game
         Scanner numIn = new Scanner(System.in);
         System.out.println("For this game you have to finish the description of a 'noun'.\nA noun is a...");
         System.out.println("\n1. Doing word\n2. Descriptive word\n3. Describes a doing word\n4. An Object, eg: 'Dog'\n");
@@ -112,6 +119,7 @@ public class letters {
     }
 
     void adjGame(){
+        //this is the adjective game
 
     }
 }
