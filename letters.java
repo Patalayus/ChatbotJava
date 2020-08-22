@@ -120,6 +120,14 @@ public class letters {
 
     void adjGame(){
         //this is the adjective game
-
+        Scanner numIn = new Scanner(System.in);
+        System.out.print("For this game, you have to name the adjective out of a list of words....\n");
+        System.out.println("1. Dog\n2. Big\n3. Mother\n4. Chair\n");
+        int adjChoice = numIn.nextInt();
+        if(adjChoice == 1 || adjChoice == 3 || adjChoice == 4){
+            System.out.println("Unlucky, the adjective is 'Big'");
+        }else if(adjChoice == 2){
+            System.out.println("Congratulations, 'Big' is the adjective as this describes a noun!");
+        }
     }
 }
