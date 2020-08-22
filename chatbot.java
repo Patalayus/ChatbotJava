@@ -26,6 +26,7 @@ public class chatbot{
         //class object declaration
         numbers numObj = new numbers();
         letters letObj = new letters();
+        science sciObj = new science();
 
         //user selects the task they want to do
         if(userChoice0 == 1){
@@ -36,6 +37,7 @@ public class chatbot{
             letObj.method2();
         }else if(userChoice0 == 3){
             System.out.println("Science it is!");
+            sciObj.method3();
         }else if(userChoice0 == 4){
             //weather API
         }else if(userChoice0 == 5){
