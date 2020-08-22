@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class letters {
     static void method2(){
-        chatbot jump = new chatbot();
-        //return obj
         letters QzF = new letters();
         //this obj
 
@@ -27,7 +25,8 @@ public class letters {
 
     void vowels(){
         //this is where the user can start the vowel game
-        letters spr = new letters();
+        letters spr = new letters(); //this class obj
+        chatbot noJumpVow = new chatbot(); //remote class obj
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
         int gameChoice = reg.nextInt();
@@ -35,12 +34,14 @@ public class letters {
             spr.vowelGame();
         }else {
             System.out.println("ending program");
+            noJumpVow.mainQ();
         }
     }
 
     void consenants(){
         //this is where the user can start the con game
-        letters spr = new letters();
+        letters spr = new letters(); //this class obj
+        chatbot noJumpCon = new chatbot(); //remote class obj
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
         int gameChoice = reg.nextInt();
@@ -48,12 +49,14 @@ public class letters {
             spr.conGame();
         }else {
             System.out.println("ending program");
+            noJumpCon.mainQ();
         }
     }
 
     void nouns(){
         //this is where the user can start the noun game
-        letters spr = new letters();
+        letters spr = new letters(); //this class obj
+        chatbot noJumpNoun = new chatbot(); //remote class obj
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
         int gameChoice = reg.nextInt();
@@ -61,12 +64,14 @@ public class letters {
             spr.nounGame();
         }else {
             System.out.println("ending program");
+            noJumpNoun.mainQ();
         }
     }
 
     void adjectives(){
         //this is where the user can start the adjective game
-        letters spr = new letters();
+        letters spr = new letters(); //this class obj
+        chatbot noJumpAdj = new chatbot(); //remote class obj
         Scanner reg = new Scanner(System.in);
         System.out.println("\nDid you want to start the game?\n1. Yes\n2. No\n");
         int gameChoice = reg.nextInt();
@@ -74,6 +79,7 @@ public class letters {
             spr.adjGame();
         }else {
             System.out.println("ending program");
+            noJumpAdj.mainQ();
         }
     }
 
@@ -92,7 +98,6 @@ public class letters {
             System.out.println("Congratulations, you have selected the correct letter");
             jumpVowel.mainQ();
         }
-
     }
 
     void conGame(){
@@ -110,7 +115,6 @@ public class letters {
             System.out.println("Congratulations, you have selected the correct letter");
             jumpCon.mainQ();
         }
-
     }
 
     void nounGame(){

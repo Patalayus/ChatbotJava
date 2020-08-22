@@ -21,7 +21,7 @@ public class chatbot{
 
     void mainQ(){
         Scanner inpt = new Scanner(System.in);
-        System.out.println("What would you like to do today?\n1. Mathematics\n2. English\n3. Science");
+        System.out.println("\nMAIN MENU\nWhat would you like to do today?\n1. Mathematics\n2. English\n3. Science\n4. Quit");
         double userChoice0 = inpt.nextDouble();
 
         //class object declaration
@@ -37,6 +37,8 @@ public class chatbot{
             letObj.method2();
         }else if(userChoice0 == 3){
             System.out.println("Science it is!");
+        }else{
+            //quit program
         }
     }
 
