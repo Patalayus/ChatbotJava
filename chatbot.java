@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.lang.Math;
-//class name is same as file name
 
 public class chatbot{
     public static void main(String args[]){
@@ -21,7 +20,7 @@ public class chatbot{
 
     void mainQ(){
         Scanner inpt = new Scanner(System.in);
-        System.out.println("\nMAIN MENU\nWhat would you like to do today?\n1. Mathematics\n2. English\n3. Science\n4. Quit");
+        System.out.println("\nMAIN MENU\nWhat would you like to do today?\n1. Mathematics\n2. English\n3. Science\n4. Weather\n5. Quit");
         double userChoice0 = inpt.nextDouble();
 
         //class object declaration
@@ -37,8 +36,10 @@ public class chatbot{
             letObj.method2();
         }else if(userChoice0 == 3){
             System.out.println("Science it is!");
-        }else{
-            //quit program
+        }else if(userChoice0 == 4){
+            //weather API
+        }else if(userChoice0 == 5){
+            //quit
         }
     }
 
