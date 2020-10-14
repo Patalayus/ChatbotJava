@@ -4,6 +4,24 @@ import java.lang.Math;
 public class chatbot{
     public static void main(String args[]){
         //scanner initialised
+        /**
+        final String secretKey = "SECRET_KEY";
+
+        String originalString = "This_Is _The_Original_String";
+        String encryptedString = AES.encrypt(originalString, secretKey) ;
+        String decryptedString = AES.decrypt(encryptedString, secretKey) ;
+
+        System.out.println(originalString);
+        //prints out original string
+        System.out.println(encryptedString);
+        //prints out excrypted string
+        System.out.println(decryptedString);
+        //decripts the string and displays the message
+         **/
+
+
+
+
         chatbot pass = new chatbot();
         Scanner inpt = new Scanner(System.in);
         System.out.println("Hello and welcome to the 2020 Summer Chatbot\nPlease enter your name:");
