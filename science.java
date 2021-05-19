@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class science {
+    //test on new device
     static void method3(){
         science go = new science();
 
