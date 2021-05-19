@@ -5,7 +5,7 @@ public class numbers{
         //class object
         chatbot jump = new chatbot();
 
-        System.out.println("What would you like to do?\n1. Add\n2. Subract\n3. Multiply\n4. Divide\n");
+        System.out.println("What would you like to do?\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
         Scanner sc = new Scanner(System.in);
         int mathChoice = sc.nextInt();
         //addition below
