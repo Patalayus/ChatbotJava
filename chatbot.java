@@ -19,7 +19,6 @@ public class chatbot{
         //decripts the string and displays the message
          **/
 
-
         chatbot pass = new chatbot();
         Scanner inpt = new Scanner(System.in);
         System.out.println("Hello and welcome to the 2020 Summer Chatbot\nPlease enter your name:");
@@ -71,8 +70,10 @@ public class chatbot{
         int choiceNum = cc.nextInt();
         if(choiceNum == 1){
             warp.method1();
+            //continue
         }else if(choiceNum == 2){
             warp2.mainQ();
+            //change choice
         }
     }
 }
