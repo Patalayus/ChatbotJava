@@ -5,7 +5,7 @@ public class letters {
         letters QzF = new letters();
         //this obj
 
-        System.out.println("What would you like to do?\n1. Vowels\n2. Consenants\n3. Nouns\n4. Adjectives");
+        System.out.println("What would you like to do?\n1. Vowels\n2. Consonants\n3. Nouns\n4. Adjectives");
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
         if(choice == 1){
