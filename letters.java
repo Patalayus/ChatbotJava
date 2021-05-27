@@ -14,7 +14,7 @@ public class letters {
             QzF.vowels();
         }else if(choice == 2){
             System.out.println("You have chosen Consenants...");
-            QzF.consenants();
+            QzF.consonants();
         }else if(choice == 3){
             System.out.println("You have chosen Nouns...");
             QzF.nouns();
@@ -39,7 +39,7 @@ public class letters {
         }
     }
 
-    void consenants(){
+    void consonants(){
         //this is where the user can start the con game
         letters spr = new letters(); //this class obj
         chatbot noJumpCon = new chatbot(); //remote class obj
