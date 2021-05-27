@@ -57,8 +57,9 @@ public class chatbot{
             sciObj.method3();
         }else if(userChoice0 == 4){
             //weather API
+            System.out.println("Weather it is!");
         }else if(userChoice0 == 5){
-
+            System.out.println("Quitting...");
         }
     }
 

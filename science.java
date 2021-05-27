@@ -22,7 +22,10 @@ public class science {
             go.biology();
 
         }else{
-            //validation here
+            if(choice != 1 || choice != 2 || choice != 3){
+                System.out.println("Sorry, thats not a valid option..");
+                method3();
+            }
         }
     }
 
