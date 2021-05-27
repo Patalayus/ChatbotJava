@@ -62,6 +62,7 @@ public class chatbot{
         }
     }
 
+    //this method checks if the user wishes to repeat mathematics
     void repeat(){
         Scanner cc = new Scanner(System.in);
         numbers warp = new numbers();

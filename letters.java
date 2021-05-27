@@ -5,6 +5,7 @@ public class letters {
         letters QzF = new letters();
         //this obj
 
+        //checks what user wishes to work on
         System.out.println("What would you like to do?\n1. Vowels\n2. Consonants\n3. Nouns\n4. Adjectives");
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
@@ -105,11 +106,11 @@ public class letters {
         //class object creation
         chatbot jumpCon = new chatbot();
         Scanner numIn = new Scanner(System.in);
-        System.out.println("For this game you have to select the consenant from a list of letters");
+        System.out.println("For this game you have to select the consonant from a list of letters");
         System.out.println("\n1. A\n2. T\n3. I\n4.U\n");
         int letterChoice = numIn.nextInt();
         if(letterChoice == 1 || letterChoice == 3 || letterChoice == 4){
-            System.out.println("Unlucky, the consenant is the 2nd letter, 'T'");
+            System.out.println("Unlucky, the consonant is the 2nd letter, 'T'");
             jumpCon.mainQ();
         }else if(letterChoice == 2){
             System.out.println("Congratulations, you have selected the correct letter");
