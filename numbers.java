@@ -5,7 +5,7 @@ public class numbers{
         //class object
         chatbot jump = new chatbot();
 
-        System.out.println("What would you like to do?\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+        System.out.println("What would you like to do?\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square");
         Scanner sc = new Scanner(System.in);
         int mathChoice = sc.nextInt();
         //addition below
@@ -47,6 +47,12 @@ public class numbers{
             double totalDiv = firstNumD / secondNumD;
             System.out.println("Your total is "+totalDiv);
             jump.repeat();
+        }
+        else if(mathChoice == 5){
+            System.out.println("Please enter number to square");
+            double numSqr = sc.nextDouble();
+            double totalSqr = numSqr * numSqr;
+            System.out.println(totalSqr);
         }
         else{
             System.out.println("Please enter a valid input");

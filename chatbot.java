@@ -16,7 +16,7 @@ public class chatbot{
         System.out.println(encryptedString);
         //prints out excrypted string
         System.out.println(decryptedString);
-        //decripts the string and displays the message
+        //decrypts the string and displays the message
          **/
 
         chatbot pass = new chatbot();
