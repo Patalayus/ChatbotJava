@@ -10,7 +10,13 @@ public class weather {
                 "Wales\n3. Scotland\n4. Northern Island");
         String countryString = sc.next();
         if(countryString.equals(1) || countryString.equals("england")){
-            //populate this
+            System.out.println("What is the capital of this country?\n1. Cornwall\n2. Edinburgh\n3. Essex\n4. London\n");
+            int answerQ1 = sc.nextInt();
+            if(answerQ1 == 4){
+                System.out.println("Well done! That is correct!");
+            }else{
+                System.out.println("Unfortunately that is not correct");
+            }
 
         }else if(countryString.equals(2) || countryString.equals("wales")){
             //populate this
