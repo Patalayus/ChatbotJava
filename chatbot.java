@@ -19,6 +19,7 @@ public class chatbot{
         //decrypts the string and displays the message
          **/
 
+        //object, scanner creation
         chatbot pass = new chatbot();
         Scanner inpt = new Scanner(System.in);
         System.out.println("Hello and welcome to the 2020 Summer Chatbot\nPlease enter your name:");
@@ -58,6 +59,10 @@ public class chatbot{
             System.out.println("Weather it is!");
         }else if(userChoice0 == 5){
             System.out.println("Quitting...");
+        }else{
+            //validation
+            System.out.println("Please enter one of the numbers listed above");
+            mainQ();
         }
     }
 
@@ -74,6 +79,9 @@ public class chatbot{
         }else if(choiceNum == 2){
             warp2.mainQ();
             //change choice
+        }else{
+            System.out.println("please enter a valid input");
+            repeat();
         }
     }
 }
