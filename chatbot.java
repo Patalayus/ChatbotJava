@@ -36,13 +36,14 @@ public class chatbot{
 
     void mainQ(){
         Scanner inpt = new Scanner(System.in);
-        System.out.println("\nMAIN MENU\nWhat would you like to do today?\n1. Mathematics\n2. English\n3. Science\n4. Weather\n5. Quit");
+        System.out.println("\nMAIN MENU\nWhat would you like to do today?\n1. Mathematics\n2. English\n3. Science\n4. Geography\n5. Quit");
         double userChoice0 = inpt.nextDouble();
 
         //class object declaration
         numbers numObj = new numbers();
         letters letObj = new letters();
         science sciObj = new science();
+        weather geoObj = new weather();
 
         //user selects the task they want to do
         if(userChoice0 == 1){
@@ -55,8 +56,8 @@ public class chatbot{
             System.out.println("Science it is!");
             sciObj.method3();
         }else if(userChoice0 == 4){
-            //weather API
-            System.out.println("Weather it is!");
+            System.out.println("Geography it is!");
+            geoObj.method4();
         }else if(userChoice0 == 5){
             System.out.println("Quitting...");
         }else{
@@ -80,6 +81,7 @@ public class chatbot{
             warp2.mainQ();
             //change choice
         }else{
+            //validation
             System.out.println("please enter a valid input");
             repeat();
         }
